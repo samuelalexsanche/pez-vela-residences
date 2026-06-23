@@ -5,7 +5,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatStrip } from "@/components/ui/StatStrip";
 import { BuildingTimeline } from "@/components/sections/BuildingTimeline";
 import { CtaBand } from "@/components/sections/CtaBand";
-import { LifestyleBanner } from "@/components/sections/LifestyleBanner";
 import { Reveal } from "@/components/motion/Reveal";
 import { Parallax } from "@/components/motion/Parallax";
 import { stats, especificaciones } from "@/data/site";
@@ -116,11 +115,6 @@ export default function DesarrolloPage() {
           </Reveal>
         </div>
       </section>
-
-      <LifestyleBanner
-        image="/branding/banner-lifestyle.png"
-        quote="Arquitectura, confort y paisaje en perfecta armonía."
-      />
 
       <CtaBand
         title="Conoce el desarrollo en persona"

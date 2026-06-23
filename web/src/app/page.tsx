@@ -148,10 +148,7 @@ export default function Home() {
       </section>
 
       {/* Lifestyle */}
-      <LifestyleBanner
-        image="/branding/banner-mar.png"
-        quote="El espacio que mereces, en el destino que amas."
-      />
+      <LifestyleBanner quote="El espacio que mereces, en el destino que amas." />
 
       {/* Ubicación teaser */}
       <section className="bg-crema-deep py-24 sm:py-32">
