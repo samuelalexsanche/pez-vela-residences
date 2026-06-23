@@ -18,7 +18,7 @@ export default function UnidadesPage() {
         kicker="Unidades · Niveles 1 – 5"
         title={<>Seis tipologías de departamento</>}
         intro="30 departamentos de dos recámaras, 6 por nivel, todos con terraza privada. Explora cada tipología con su desglose completo."
-        image="/fotos/interior-sala-vista-mar-02.jpeg"
+        image="/fotos/interior-sala-cocina-01.jpeg"
         imageAlt="Interior de departamento con vista al mar"
       />
 

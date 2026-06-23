@@ -103,32 +103,32 @@ export const amenidades = [
   {
     titulo: "Alberca infinity",
     detalle: "Borde infinito sobre la bahía, abierta al horizonte del Pacífico.",
-    foto: "/fotos/amenidad-rooftop-alberca-infinity-01.jpeg",
+    foto: "/fotos/amenidad-rooftop-infinity-dia.jpeg",
   },
   {
     titulo: "Sky Beach",
     detalle: "Camastros y solárium en lo más alto del edificio.",
-    foto: "/fotos/amenidad-rooftop-alberca-dia-01.jpeg",
+    foto: "/fotos/amenidad-rooftop-alberca-sunset-02.jpeg",
   },
   {
     titulo: "Pool Bar",
     detalle: "Barra de coctelería junto al agua para el atardecer.",
-    foto: "/fotos/amenidad-rooftop-lounge-01.jpeg",
+    foto: "/fotos/amenidad-rooftop-poolbar-01.jpeg",
   },
   {
     titulo: "Asadores al aire libre",
     detalle: "Área de parrillas para convivir bajo el cielo de Nayarit.",
-    foto: "/fotos/amenidad-rooftop-lounge-pergola-01.jpeg",
+    foto: "/fotos/amenidad-rooftop-asadores-01.jpeg",
   },
   {
     titulo: "Lounge & pérgola",
     detalle: "Estancias de descanso a la sombra, con vista al mar.",
-    foto: "/fotos/amenidad-rooftop-lounge-02.jpeg",
+    foto: "/fotos/amenidad-rooftop-lounge-pergola-02.jpeg",
   },
   {
     titulo: "Alberca al atardecer",
     detalle: "El punto de encuentro para cerrar el día frente al sol.",
-    foto: "/fotos/amenidad-rooftop-alberca-atardecer-01.jpeg",
+    foto: "/fotos/amenidad-rooftop-infinity-atardecer.jpeg",
   },
 ];
 

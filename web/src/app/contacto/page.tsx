@@ -18,7 +18,7 @@ export default function ContactoPage() {
         kicker="Contacto"
         title={<>Agenda tu cita</>}
         intro="Déjanos tus datos y la unidad que te interesa. Te contactamos con disponibilidad, precios y condiciones de preventa."
-        image="/fotos/interior-sala-comedor-vista-mar-01.jpeg"
+        image="/fotos/interior-sala-premium-01.jpeg"
         imageAlt="Sala comedor con vista al mar"
       />
 

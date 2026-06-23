@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 };
 
 const interiores = [
-  "/fotos/interior-sala-vista-mar-01.jpeg",
-  "/fotos/interior-cocina-barra-01.jpeg",
-  "/fotos/interior-recamara-01.jpeg",
+  "/fotos/interior-sala-cocina-01.jpeg",
+  "/fotos/interior-cocina-barra-02.jpeg",
+  "/fotos/interior-recamara-02.jpeg",
 ];
 
 export default function DesarrolloPage() {
@@ -103,7 +103,7 @@ export default function DesarrolloPage() {
               <Parallax amount={40} className="absolute inset-0">
                 <div className="relative h-[120%] w-full -translate-y-[8%]">
                   <Image
-                    src="/fotos/interior-sala-comedor-vista-mar-01.jpeg"
+                    src="/fotos/interior-sala-premium-01.jpeg"
                     alt="Sala comedor con vista al mar"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"

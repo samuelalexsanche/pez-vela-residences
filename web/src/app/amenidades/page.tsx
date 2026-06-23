@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 };
 
 const galeriaRooftop = [
-  "/fotos/amenidad-rooftop-alberca-infinity-01.jpeg",
-  "/fotos/amenidad-rooftop-alberca-dia-01.jpeg",
-  "/fotos/amenidad-rooftop-lounge-01.jpeg",
-  "/fotos/amenidad-rooftop-alberca-atardecer-01.jpeg",
-  "/fotos/amenidad-rooftop-lounge-pergola-01.jpeg",
-  "/fotos/amenidad-rooftop-alberca-infinity-02.jpeg",
-  "/fotos/amenidad-rooftop-lounge-02.jpeg",
-  "/fotos/interior-sala-vista-mar-01.jpeg",
+  "/fotos/amenidad-rooftop-infinity-dia.jpeg",
+  "/fotos/amenidad-rooftop-infinity-atardecer.jpeg",
+  "/fotos/amenidad-rooftop-alberca-sunset-02.jpeg",
+  "/fotos/amenidad-rooftop-lounge-pergola-02.jpeg",
+  "/fotos/amenidad-rooftop-poolbar-01.jpeg",
+  "/fotos/amenidad-rooftop-lounge-03.jpeg",
+  "/fotos/amenidad-rooftop-asadores-01.jpeg",
+  "/fotos/amenidad-lobby-01.jpeg",
 ];
 
 export default function AmenidadesPage() {
@@ -31,8 +31,8 @@ export default function AmenidadesPage() {
         kicker="Amenidades · Rooftop"
         title={<>Una azotea con vista al Pacífico</>}
         intro="Amenidades diseñadas para incrementar la plusvalía y el atractivo del proyecto, tanto en uso residencial como en renta."
-        image="/fotos/amenidad-rooftop-alberca-atardecer-01.jpeg"
-        imageAlt="Alberca rooftop al atardecer"
+        image="/fotos/amenidad-rooftop-infinity-atardecer.jpeg"
+        imageAlt="Alberca infinity rooftop al atardecer"
       />
 
       {/* Tarjetas de amenidades alternadas */}
