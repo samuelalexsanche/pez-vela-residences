@@ -9,7 +9,10 @@ const nextConfig: NextConfig = {
   basePath: basePath || undefined,
   assetPrefix: basePath || undefined,
   images: {
-    unoptimized: true, // next/image optimizer is unavailable on static hosting
+    // Custom loader prepends the base path to every image src — next/image does
+    // not do this automatically in static export, which broke images on Pages.
+    loader: "custom",
+    loaderFile: "./src/lib/imageLoader.ts",
   },
   trailingSlash: true, // emit /unidades/index.html so Pages routing works cleanly
 };
