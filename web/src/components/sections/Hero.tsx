@@ -50,7 +50,7 @@ export function Hero() {
           className="mx-auto mb-6 w-52 sm:w-64"
         >
           <Image
-            src="/branding/logo-pezvela-turquesa-blanco.png"
+            src="/branding/logo-pezvela-transparente.png"
             alt="Pez Vela Residences"
             width={400}
             height={480}

@@ -41,15 +41,11 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3" aria-label="Inicio">
           <Image
-            src={
-              solid
-                ? "/branding/logo-pezvela-transparente.png"
-                : "/branding/logo-pezvela-turquesa-blanco.png"
-            }
+            src="/branding/logo-pezvela-transparente.png"
             alt="Pez Vela Residences"
             width={48}
-            height={48}
-            className="h-11 w-11 object-contain"
+            height={51}
+            className="h-11 w-auto object-contain"
             priority
           />
           <span
