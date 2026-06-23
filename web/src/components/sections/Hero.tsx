@@ -21,10 +21,10 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden bg-teal-deep"
+      className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden"
     >
       {/* Fondo: video con fallback a imagen */}
-      <motion.div style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110">
+      <motion.div style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110 bg-teal-deep">
         <video
           autoPlay
           muted
