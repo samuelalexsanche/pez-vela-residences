@@ -21,7 +21,7 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden"
+      className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden bg-teal-deep"
     >
       {/* Fondo: video con fallback a imagen */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110">
