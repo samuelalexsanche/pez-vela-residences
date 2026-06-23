@@ -10,6 +10,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { ExteriorCarousel } from "@/components/sections/ExteriorCarousel";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { GoogleMap } from "@/components/ui/GoogleMap";
 import { stats, amenidades, cercanias, exteriores } from "@/data/site";
 import { departamentos, penthouses } from "@/data/unidades";
 
@@ -153,13 +154,11 @@ export default function Home() {
       <section className="bg-crema-deep py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2">
           <Reveal>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
-              <Image
-                src="/branding/mapa-ubicacion.png"
-                alt="Mapa de ubicación en la Bahía de Banderas"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+            <div className="aspect-[4/3]">
+              <GoogleMap
+                query="La Cruz de Huanacaxtle, Nayarit, Mexico"
+                zoom={15}
+                className="h-full w-full"
               />
             </div>
           </Reveal>
