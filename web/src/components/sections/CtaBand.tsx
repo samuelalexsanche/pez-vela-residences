@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 import { Button } from "@/components/ui/Button";
-import { SailfishLogo } from "@/components/motion/SailfishLogo";
 
 type Props = {
   title: string;
@@ -12,8 +12,14 @@ export function CtaBand({ title, intro }: Props) {
     <section className="bg-teal py-24 text-center sm:py-28">
       <div className="mx-auto max-w-3xl px-6">
         <Reveal>
-          <div className="mx-auto mb-8 h-16 w-16 text-turquesa">
-            <SailfishLogo className="h-full w-full text-[#6fcdd6]" animateDraw={false} />
+          <div className="mx-auto mb-8 w-20">
+            <Image
+              src="/branding/logo-pezvela-transparente.png"
+              alt="Pez Vela Residences"
+              width={80}
+              height={86}
+              className="w-full object-contain"
+            />
           </div>
         </Reveal>
         <Reveal delay={0.05}>
