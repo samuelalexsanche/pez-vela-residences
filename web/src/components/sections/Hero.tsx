@@ -1,11 +1,11 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { asset } from "@/lib/asset";
 import { site } from "@/data/site";
 import { Button } from "@/components/ui/Button";
-import { SailfishLogo } from "@/components/motion/SailfishLogo";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -44,12 +44,19 @@ export function Hero() {
         className="relative mx-auto max-w-4xl px-5 text-center"
       >
         <motion.div
-          initial={{ opacity: 0, scale: 0.85 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="mx-auto mb-7 h-24 w-24 text-turquesa-light sm:h-28 sm:w-28"
+          initial={{ opacity: 0, scale: 0.88, y: 10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+          className="mx-auto mb-6 w-52 sm:w-64"
         >
-          <SailfishLogo className="h-full w-full text-[#7fd4dd]" />
+          <Image
+            src="/branding/logo-pezvela-turquesa-blanco.png"
+            alt="Pez Vela Residences"
+            width={400}
+            height={480}
+            priority
+            className="w-full drop-shadow-[0_2px_16px_rgba(0,0,0,0.4)]"
+          />
         </motion.div>
 
         <motion.p
@@ -61,20 +68,11 @@ export function Hero() {
           {site.ubicacion}
         </motion.p>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-4 font-serif text-7xl leading-[0.95] tracking-[0.06em] text-white text-shadow-soft sm:text-8xl md:text-[8.5rem]"
-        >
-          PEZ VELA
-        </motion.h1>
-
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.85, duration: 0.9 }}
-          className="-mt-2 font-script text-4xl text-[#a9e1e7] sm:text-5xl"
+          transition={{ delay: 0.7, duration: 0.9 }}
+          className="mt-3 font-script text-4xl text-[#a9e1e7] sm:text-5xl"
         >
           Residences
         </motion.p>
