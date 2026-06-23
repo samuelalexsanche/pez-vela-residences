@@ -11,11 +11,11 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <Image
-                src="/branding/logo-pezvela-turquesa-blanco.png"
+                src="/branding/logo-pezvela-transparente.png"
                 alt="Pez Vela Residences"
                 width={56}
-                height={56}
-                className="h-14 w-14 object-contain"
+                height={60}
+                className="h-14 w-auto object-contain"
               />
               <div>
                 <p className="font-serif text-2xl tracking-wide">PEZ VELA</p>
