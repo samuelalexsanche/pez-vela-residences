@@ -18,8 +18,8 @@ export default function PenthousesPage() {
         kicker="Penthouses · Nivel 6"
         title={<>Vivir en lo más alto</>}
         intro="Lo más exclusivo de Pez Vela: tres residencias de gran formato con terrazas panorámicas abiertas al Pacífico."
-        image="/fotos/amenidad-rooftop-infinity-dia.jpeg"
-        imageAlt="Alberca infinity con vista panorámica"
+        image="/branding/banner-brand.png"
+        imageAlt="Pez Vela Residences — Penthouses"
       />
 
       <section className="bg-teal py-20 sm:py-24">

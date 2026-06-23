@@ -26,6 +26,12 @@ export type Unidad = {
   /** Texto editorial corto para la vista de detalle. */
   descripcion: string;
   amenidades: string[];
+  /** Render 3D bird's-eye de la tipología. */
+  render3d?: string;
+  /** Planta arquitectónica técnica. */
+  planta?: string;
+  /** Paleta de acabados y materiales. */
+  paleta?: string;
 };
 
 const ESPECIFICACIONES_BASE = [
@@ -61,6 +67,9 @@ export const departamentos: Unidad[] = [
     descripcion:
       "La tipología insignia: la terraza más amplia del nivel (casi 30 m²) abierta a la bahía, ideal para vivir el atardecer de la Riviera todos los días.",
     amenidades: ESPECIFICACIONES_BASE,
+    render3d: "/renders/render-depto-1.png",
+    planta: "/renders/planta-depto-1.png",
+    paleta: "/renders/paleta-depto-1.png",
   },
   {
     slug: "departamento-2",
@@ -84,6 +93,9 @@ export const departamentos: Unidad[] = [
     descripcion:
       "El mayor metraje interior de la línea de departamentos. Espacios sociales generosos pensados para recibir, con comedor independiente y cocina con barra.",
     amenidades: ESPECIFICACIONES_BASE,
+    render3d: "/renders/render-depto-2.png",
+    planta: "/renders/planta-depto-2.png",
+    paleta: "/renders/paleta-depto-2.png",
   },
   {
     slug: "departamento-3",
@@ -107,6 +119,9 @@ export const departamentos: Unidad[] = [
     descripcion:
       "Equilibrio perfecto entre interior y terraza. Una opción eficiente y luminosa, con la misma terraza de 23 m² que las tipologías superiores.",
     amenidades: ESPECIFICACIONES_BASE,
+    render3d: "/renders/render-depto-3.png",
+    planta: "/renders/planta-depto-3.png",
+    paleta: "/renders/paleta-depto-3.png",
   },
   {
     slug: "departamento-4",
@@ -130,6 +145,9 @@ export const departamentos: Unidad[] = [
     descripcion:
       "Interior amplio con una terraza íntima. Distribución racional que prioriza recámaras grandes y áreas sociales bien conectadas.",
     amenidades: ESPECIFICACIONES_BASE,
+    render3d: "/renders/render-depto-4.png",
+    planta: "/renders/planta-depto-4.png",
+    paleta: "/renders/paleta-depto-4.png",
   },
   {
     slug: "departamento-5",
@@ -153,6 +171,9 @@ export const departamentos: Unidad[] = [
     descripcion:
       "Compacto e inteligente. La entrada ideal al desarrollo para inversión en renta vacacional, sin renunciar a terraza privada ni a la luz natural.",
     amenidades: ESPECIFICACIONES_BASE,
+    render3d: "/renders/render-depto-5.png",
+    planta: "/renders/planta-depto-5.png",
+    paleta: "/renders/paleta-depto-5.png",
   },
   {
     slug: "departamento-6",
@@ -176,6 +197,9 @@ export const departamentos: Unidad[] = [
     descripcion:
       "Interior bien proporcionado con terraza acogedora. Máximo aprovechamiento del espacio para quien busca un pied-à-terre frente al mar.",
     amenidades: ESPECIFICACIONES_BASE,
+    render3d: "/renders/render-depto-6.png",
+    planta: "/renders/planta-depto-6.png",
+    paleta: "/renders/paleta-depto-6.png",
   },
 ];
 

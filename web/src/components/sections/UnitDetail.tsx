@@ -151,6 +151,64 @@ export function UnitDetail({ unidad }: { unidad: Unidad }) {
           </div>
         </div>
       </section>
+
+      {/* Render 3D + Planta + Paleta — solo si el departamento tiene estos assets */}
+      {(unidad.render3d || unidad.planta || unidad.paleta) && (
+        <section className="bg-crema-deep py-20 sm:py-24">
+          <div className="mx-auto max-w-7xl px-5 sm:px-8">
+            {unidad.render3d && (
+              <Reveal>
+                <p className="kicker mb-6">Render 3D de la tipología</p>
+                <div className="relative overflow-hidden rounded-3xl bg-white shadow-[var(--shadow-card)]">
+                  <Image
+                    src={unidad.render3d}
+                    alt={`Render 3D de la tipología ${unidad.nombre}`}
+                    width={1200}
+                    height={800}
+                    sizes="(max-width: 1280px) 100vw, 1200px"
+                    className="w-full object-contain"
+                  />
+                </div>
+              </Reveal>
+            )}
+
+            {(unidad.planta || unidad.paleta) && (
+              <div className="mt-12 grid gap-8 md:grid-cols-2">
+                {unidad.planta && (
+                  <Reveal delay={0.05}>
+                    <p className="kicker mb-4">Planta arquitectónica</p>
+                    <div className="overflow-hidden rounded-2xl bg-white shadow-[var(--shadow-soft)]">
+                      <Image
+                        src={unidad.planta}
+                        alt={`Planta arquitectónica ${unidad.nombre}`}
+                        width={800}
+                        height={560}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="w-full object-contain"
+                      />
+                    </div>
+                  </Reveal>
+                )}
+                {unidad.paleta && (
+                  <Reveal delay={0.1}>
+                    <p className="kicker mb-4">Paleta de acabados</p>
+                    <div className="overflow-hidden rounded-2xl bg-white shadow-[var(--shadow-soft)]">
+                      <Image
+                        src={unidad.paleta}
+                        alt={`Paleta de acabados ${unidad.nombre}`}
+                        width={800}
+                        height={560}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="w-full object-contain"
+                      />
+                    </div>
+                  </Reveal>
+                )}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
     </>
   );
 }
