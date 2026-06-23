@@ -1,0 +1,15 @@
+# dependencies
+web/node_modules/
+
+# next.js build output
+web/.next/
+web/out/
+
+# misc
+.DS_Store
+*.log
+web/next-env.d.ts
+
+# editor
+.vscode/
+.idea/

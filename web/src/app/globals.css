@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   PEZ VELA RESIDENCES — Design system
+   Estética costera-premium: teal profundo, turquesa, arena, madera, crema.
+   ========================================================================== */
+
+@theme {
+  /* Paleta de marca (brochure oficial) */
+  --color-teal: #434e50;
+  --color-teal-deep: #2f383a;
+  --color-turquesa: #109aa7;
+  --color-turquesa-light: #6fcdd6;
+  --color-turquesa-muted: #37686d;
+  --color-arena: #c9b49a;
+  --color-madera: #a6705a;
+  --color-crema: #f3eee6;
+  --color-crema-deep: #ece4d7;
+  --color-blanco: #ffffff;
+
+  /* Tipografías (cargadas en layout con next/font) */
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-script: var(--font-pinyon), cursive;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+
+  /* Sombras suaves de marca */
+  --shadow-soft: 0 18px 50px -24px rgba(47, 56, 58, 0.45);
+  --shadow-card: 0 26px 60px -28px rgba(47, 56, 58, 0.55);
+
+  /* Easing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --background: var(--color-crema);
+  --foreground: #1f2627;
+}
+
+* {
+  border-color: color-mix(in srgb, var(--color-teal) 12%, transparent);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-turquesa);
+  color: var(--color-blanco);
+}
+
+/* Tipografía editorial */
+.font-serif {
+  font-family: var(--font-serif);
+}
+.font-script {
+  font-family: var(--font-script);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+/* Kicker en mayúsculas para los encabezados de sección */
+.kicker {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-turquesa);
+}
+
+/* Línea fina turquesa decorativa */
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-turquesa),
+    transparent
+  );
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-crema-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-turquesa-muted);
+  border-radius: 999px;
+}
+
+/* Texto sobre imágenes a sangre */
+.text-shadow-soft {
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Enlaces con subrayado animado */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s var(--ease-out-expo);
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Respeta preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
