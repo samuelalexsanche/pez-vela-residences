@@ -28,7 +28,7 @@ export default function DesarrolloPage() {
         kicker="El desarrollo"
         title={<>Usos mixtos, vocación de mar</>}
         intro="Área comercial en planta baja, 33 residencias de lujo y una azotea pensada para la plusvalía — todo a un paso de la marina."
-        image="/branding/render-exterior-edificio.jpg"
+        image="/fotos/exterior-03.jpeg"
         imageAlt="Render exterior de Pez Vela Residences"
       />
 

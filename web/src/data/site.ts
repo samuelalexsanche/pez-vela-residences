@@ -41,6 +41,15 @@ export const stats = [
   { valor: 257, sufijo: " m²", label: "Penthouse máximo" },
 ];
 
+// Renders del exterior para el carrusel (distintos ángulos del edificio).
+export const exteriores = [
+  "/fotos/exterior-01.jpeg",
+  "/fotos/exterior-05.jpeg",
+  "/fotos/exterior-02.jpeg",
+  "/fotos/exterior-03.jpeg",
+  "/fotos/exterior-04.jpeg",
+];
+
 export const cercanias = [
   {
     titulo: "La Marina",

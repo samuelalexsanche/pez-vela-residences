@@ -7,10 +7,10 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatStrip } from "@/components/ui/StatStrip";
 import { UnitCard } from "@/components/ui/UnitCard";
 import { Reveal } from "@/components/motion/Reveal";
-import { Parallax } from "@/components/motion/Parallax";
+import { ExteriorCarousel } from "@/components/sections/ExteriorCarousel";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { stats, amenidades, cercanias } from "@/data/site";
+import { stats, amenidades, cercanias, exteriores } from "@/data/site";
 import { departamentos, penthouses } from "@/data/unidades";
 
 export default function Home() {
@@ -48,18 +48,12 @@ export default function Home() {
 
           <Reveal delay={0.1}>
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
-              <Parallax amount={40} className="absolute inset-0">
-                <div className="relative h-[120%] w-full -translate-y-[8%]">
-                  <Image
-                    src="/branding/render-exterior-edificio.jpg"
-                    alt="Render exterior de Pez Vela Residences"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
-                  />
-                </div>
-              </Parallax>
-              <div className="absolute bottom-5 left-5 rounded-2xl bg-white/90 px-5 py-4 backdrop-blur-sm">
+              <ExteriorCarousel
+                images={exteriores}
+                alt="Render exterior de Pez Vela Residences"
+                className="absolute inset-0 h-full w-full"
+              />
+              <div className="pointer-events-none absolute bottom-5 left-5 z-10 rounded-2xl bg-white/90 px-5 py-4 backdrop-blur-sm">
                 <p className="font-serif text-2xl text-teal">Riviera Nayarit</p>
                 <p className="text-xs uppercase tracking-[0.18em] text-turquesa">
                   Bahía de Banderas
