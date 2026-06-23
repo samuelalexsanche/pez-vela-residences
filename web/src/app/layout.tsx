@@ -4,7 +4,6 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
-import { SmoothScroll } from "@/components/motion/SmoothScroll";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -67,7 +66,6 @@ export default function RootLayout({
       className={`${cormorant.variable} ${manrope.variable} ${pinyon.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-crema text-foreground">
-        <SmoothScroll />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
