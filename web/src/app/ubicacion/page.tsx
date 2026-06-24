@@ -8,9 +8,9 @@ import { GoogleMap } from "@/components/ui/GoogleMap";
 import { cercanias, site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Ubicación",
+  title: "Ubicación — La Cruz de Huanacaxtle, Marina y Riviera Nayarit",
   description:
-    "La Cruz de Huanacaxtle, sobre la vía principal y junto a la marina internacional, en el corazón de la Riviera Nayarit.",
+    "Pez Vela Residences está sobre la vía principal de La Cruz de Huanacaxtle, a pasos de la marina internacional y a minutos de Punta de Mita. La ubicación más estratégica de la Bahía de Banderas.",
 };
 
 export default function UbicacionPage() {

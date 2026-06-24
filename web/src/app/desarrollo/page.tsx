@@ -10,9 +10,9 @@ import { Parallax } from "@/components/motion/Parallax";
 import { stats, especificaciones } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "El desarrollo",
+  title: "El Desarrollo — 33 Residencias de Lujo en La Cruz de Huanacaxtle",
   description:
-    "Pez Vela Residences: 33 unidades residenciales en 6 niveles, área comercial y amenidades en rooftop, en La Cruz de Huanacaxtle.",
+    "Pez Vela Residences: torre de usos mixtos con área comercial, 33 departamentos de 2 recámaras y rooftop exclusivo. 6 niveles frente a la marina de La Cruz de Huanacaxtle, Riviera Nayarit.",
 };
 
 const interiores = [

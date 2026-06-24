@@ -8,9 +8,9 @@ import { Reveal } from "@/components/motion/Reveal";
 import { amenidades } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Amenidades",
+  title: "Amenidades — Rooftop con Alberca Infinity en La Cruz de Huanacaxtle",
   description:
-    "Rooftop con alberca infinity, Sky Beach, Pool Bar, asadores y gimnasio techado — amenidades que incrementan la plusvalía.",
+    "El rooftop de Pez Vela Residences tiene alberca infinity con borde al Pacífico, Sky Beach, Pool Bar, asadores al aire libre y gimnasio techado. Amenidades diseñadas para maximizar la plusvalía y la renta vacacional.",
 };
 
 const galeriaRooftop = [

@@ -6,9 +6,9 @@ import { CtaBand } from "@/components/sections/CtaBand";
 import { departamentos } from "@/data/unidades";
 
 export const metadata: Metadata = {
-  title: "Unidades · Departamentos",
+  title: "Departamentos en Venta — 6 Tipologías de 100 a 132 m²",
   description:
-    "Seis tipologías de departamento de 2 recámaras con terraza privada, de 100 a 132 m². Interior, terraza y numeración por unidad.",
+    "Seis tipologías de departamento de 2 recámaras con terraza privada en La Cruz de Huanacaxtle. De 100 a 132 m² totales, todos con vista y acabados de lujo. Conoce planta arquitectónica, render y paleta de cada unidad.",
 };
 
 export default function UnidadesPage() {

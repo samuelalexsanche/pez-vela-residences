@@ -6,9 +6,9 @@ import { CtaBand } from "@/components/sections/CtaBand";
 import { penthouses } from "@/data/unidades";
 
 export const metadata: Metadata = {
-  title: "Penthouses",
+  title: "Penthouses en Venta — Hasta 257 m² con Vista Panorámica al Pacífico",
   description:
-    "Tres penthouses únicos de 213 a 257 m² en el nivel 6, con terrazas amplias y vista panorámica a la Bahía de Banderas.",
+    "Tres penthouses únicos en el nivel 6 de Pez Vela Residences: de 213 a 257 m² totales, con terrazas privadas de hasta 55 m² y vista panorámica a la Bahía de Banderas. Lo más exclusivo de la Riviera Nayarit.",
 };
 
 export default function PenthousesPage() {

@@ -7,9 +7,9 @@ import { Badge } from "@/components/ui/Badge";
 import { inversion } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Inversión",
+  title: "Inversión Inmobiliaria — Preventa en Riviera Nayarit con Alta Plusvalía",
   description:
-    "Por qué invertir en Pez Vela Residences: renta vacacional, plusvalía, marina internacional y precios de preventa.",
+    "Invertir en Pez Vela Residences significa acceder a preventa en uno de los destinos costeros con mayor crecimiento de México. Alta demanda de renta vacacional, marina internacional y plusvalía sostenida en la Bahía de Banderas.",
 };
 
 export default function InversionPage() {

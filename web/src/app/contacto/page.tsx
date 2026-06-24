@@ -6,9 +6,9 @@ import { Reveal } from "@/components/motion/Reveal";
 import { site, whatsappLink } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Contacto",
+  title: "Contacto — Agenda tu Visita a Pez Vela Residences",
   description:
-    "Agenda tu cita en Pez Vela Residences. Escríbenos por WhatsApp o déjanos tus datos y la unidad que te interesa.",
+    "¿Te interesa un departamento o penthouse en La Cruz de Huanacaxtle? Agenda tu cita en Pez Vela Residences por WhatsApp o formulario. Te mostramos las tipologías disponibles y las condiciones de preventa.",
 };
 
 export default function ContactoPage() {
